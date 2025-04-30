@@ -8,7 +8,7 @@ class TPQueue {
   struct Node {
     T data;
     Node* next;
-    Node(T data, Node* next = nullptr) : data(data), next(next) {}
+    explicit Node(T data, Node* next = nullptr) : data(data), next(next) {}
   };
 
   Node* front;
